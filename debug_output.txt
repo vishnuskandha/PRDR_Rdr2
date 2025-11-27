@@ -1,0 +1,9 @@
+START
+Reading file: c:/Users/admin/Downloads/Projects pending/Rdr2/PRDR/PRDR31155361589_1
+File read, size: 1052488
+Extracting metadata...
+Raw metadata string: 11/24/25 18:42:17
+Metadata: {"date":"11/24/25","time":"18:42:17","formatted":"25-11-24 18.42.17","raw":"11/24/25 18:42:17"}
+Extracting JPEG data...
+JPEG data found using Method 1 (skip 300 bytes)
+SUCCESS: JPEG data extracted, size: 1052188
