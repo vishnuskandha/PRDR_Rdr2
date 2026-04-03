@@ -1,5 +1,5 @@
 import { useState, useCallback, memo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, m as M } from 'framer-motion';
 import { downloadFile } from '../utils/imageConverter';
 import './ImageGallery.css';
 
@@ -29,8 +29,8 @@ const ImageGallery = memo(function ImageGallery({ images, onDownloadAll, onClear
     }
 
     return (
-        <>
-            <motion.div
+            <>
+            <M.div
                 className="gallery-container"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -56,7 +56,7 @@ const ImageGallery = memo(function ImageGallery({ images, onDownloadAll, onClear
                     </div>
                 </div>
 
-                <motion.div
+                <M.div
                     className="image-grid"
                     initial="hidden"
                     animate="visible"
@@ -72,7 +72,7 @@ const ImageGallery = memo(function ImageGallery({ images, onDownloadAll, onClear
                 >
                     <AnimatePresence>
                         {images.map((image, index) => (
-                            <motion.div
+                            <M.div
                                 key={index}
                                 className="image-card"
                                 variants={{
@@ -126,22 +126,22 @@ const ImageGallery = memo(function ImageGallery({ images, onDownloadAll, onClear
                                     </svg>
                                     Download
                                 </button>
-                            </motion.div>
+                            </M.div>
                         ))}
                     </AnimatePresence>
-                </motion.div>
-            </motion.div>
+                </M.div>
+            </M.div>
 
             <AnimatePresence>
                 {lightboxImage && (
-                    <motion.div
+                    <M.div
                         className="lightbox"
                         onClick={closeLightbox}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                     >
-                        <motion.div
+                        <M.div
                             className="lightbox-content"
                             onClick={(e) => e.stopPropagation()}
                             initial={{ scale: 0.8, opacity: 0 }}
@@ -164,8 +164,8 @@ const ImageGallery = memo(function ImageGallery({ images, onDownloadAll, onClear
                                     <p className="lightbox-metadata">{lightboxImage.metadata.formatted}</p>
                                 )}
                             </div>
-                        </motion.div>
-                    </motion.div>
+                        </M.div>
+                    </M.div>
                 )}
             </AnimatePresence>
         </>

@@ -31,8 +31,11 @@ export function usePRDRConversion() {
                         filename,
                         previewUrl,
                         blob: pngBlob,
+                        pngBlob,
                         originalSize: file.size,
                         convertedSize: pngBlob.size,
+                        pngSize: pngBlob.size,
+                        metadata: result.metadata,
                         timestamp
                     });
 

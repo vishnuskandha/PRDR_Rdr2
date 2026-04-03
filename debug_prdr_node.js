@@ -1,6 +1,5 @@
 
 import fs from 'fs';
-import path from 'path';
 
 const filePath = "c:/Users/admin/Downloads/Projects pending/Rdr2/PRDR/PRDR31155361589_1";
 
