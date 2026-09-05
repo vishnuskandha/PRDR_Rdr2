@@ -1,5 +1,5 @@
 import { useState, useCallback, memo } from 'react';
-import { AnimatePresence, m as M } from 'framer-motion';
+import { AnimatePresence, motion as M } from 'framer-motion';
 import { downloadFile } from '../utils/imageConverter';
 import './ImageGallery.css';
 
