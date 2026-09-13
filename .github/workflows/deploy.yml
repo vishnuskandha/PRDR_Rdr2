@@ -34,6 +34,9 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Regression tests
+        run: node --test tests/*.test.js
+
       - name: Build
         run: npm run build
 
