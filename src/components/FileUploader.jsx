@@ -1,4 +1,5 @@
 import { useState, useRef, memo } from 'react';
+import { isPRDRFileName } from '../utils/fileValidation';
 import './FileUploader.css';
 
 const FileUploader = memo(function FileUploader({ onFilesSelected }) {
@@ -34,17 +35,14 @@ const FileUploader = memo(function FileUploader({ onFilesSelected }) {
     const handleFileInput = (e) => {
         const files = Array.from(e.target.files);
         handleFiles(files);
+        e.target.value = '';
     };
 
     const handleFiles = (files) => {
-        // Filter for PRDR files (files without extension or starting with PRDR)
-        const prdrFiles = files.filter(file => {
-            const name = file.name.toUpperCase();
-            return name.startsWith('PRDR') || !name.includes('.');
-        });
+        const prdrFiles = files.filter(file => isPRDRFileName(file.name));
 
         if (prdrFiles.length === 0) {
-            alert('No PRDR files found. Please select PRDR files (files starting with "PRDR" without an extension).');
+            alert('No PRDR files found. Please select PRDR files (files starting with "PRDR" without a file extension).');
             return;
         }
 
