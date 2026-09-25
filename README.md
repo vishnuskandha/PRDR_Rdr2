@@ -1,4 +1,8 @@
+<div align="center">
+
 # Red Dead Redemption 2 PRDR Converter
+
+</div>
 
 
 <!-- README polish: repository metadata badges -->
