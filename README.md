@@ -1,5 +1,15 @@
 # Red Dead Redemption 2 PRDR Converter
 
+
+<!-- README polish: repository metadata badges -->
+<p>
+  <a href="https://github.com/vishnuskandha/PRDR_Rdr2"><img alt="GitHub stars" src="https://img.shields.io/github/stars/vishnuskandha/PRDR_Rdr2?style=for-the-badge&logo=github&label=Stars"></a>
+  <a href="https://github.com/vishnuskandha/PRDR_Rdr2/fork"><img alt="GitHub forks" src="https://img.shields.io/github/forks/vishnuskandha/PRDR_Rdr2?style=for-the-badge&logo=github&label=Forks"></a>
+  <a href="https://github.com/vishnuskandha/PRDR_Rdr2/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/vishnuskandha/PRDR_Rdr2?style=for-the-badge&logo=github&label=Issues"></a>
+  <a href="https://github.com/vishnuskandha/PRDR_Rdr2/commits"><img alt="Last commit" src="https://img.shields.io/github/last-commit/vishnuskandha/PRDR_Rdr2?style=for-the-badge&logo=git&label=Updated"></a>
+</p>
+<!-- End README polish -->
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![CI](https://github.com/vishnuskandha/PRDR_Rdr2/actions/workflows/deploy.yml/badge.svg)](https://github.com/vishnuskandha/PRDR_Rdr2/actions/workflows/deploy.yml)
 [![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)](https://react.dev/)
